@@ -518,14 +518,14 @@ impl Vcpu {
         vm: &dyn hypervisor::Vm,
         vm_ops: Option<Arc<dyn VmOps>>,
         #[cfg(target_arch = "x86_64")] cpu_vendor: CpuVendor,
-        #[cfg(target_arch = "x86_64")] msrs: Vec<hypervisor::arch::x86::MsrEntry>,
+        #[cfg(target_arch = "x86_64")] msr_buffer: Vec<hypervisor::arch::x86::MsrEntry>,
     ) -> Result<Self> {
         let vcpu = vm
             .create_vcpu(
                 apic_id,
                 vm_ops,
                 #[cfg(target_arch = "x86_64")]
-                msrs,
+                msr_buffer,
             )
             .map_err(|e| Error::VcpuCreate(e.into()))?;
         // Initially the cpuid per vCPU is the one supported by this VM.
@@ -705,7 +705,8 @@ pub struct CpuManager {
     #[cfg(target_arch = "x86_64")]
     cpuid: Vec<CpuIdEntry>,
     #[cfg(target_arch = "x86_64")]
-    msrs: Vec<MsrEntry>,
+    /// A buffer for MSRs supported by the hardware and hypervisor
+    msr_buffer: Vec<MsrEntry>,
     #[cfg_attr(target_arch = "aarch64", allow(dead_code))]
     vm: Arc<dyn hypervisor::Vm>,
     vcpus_kill_signalled: Arc<AtomicBool>,
@@ -918,9 +919,7 @@ impl CpuManager {
             #[cfg(target_arch = "x86_64")]
             cpuid: Vec::new(),
             #[cfg(target_arch = "x86_64")]
-            msrs: hypervisor
-                .get_supported_msrs()
-                .map_err(|e| Error::VcpuCreate(e.into()))?,
+            msr_buffer: Self::construct_msr_buffer(hypervisor.as_ref())?,
             vm,
             vcpus_kill_signalled: Arc::new(AtomicBool::new(false)),
             vcpus_pause_signalled: Arc::new(AtomicBool::new(false)),
@@ -946,6 +945,20 @@ impl CpuManager {
             #[cfg(feature = "igvm")]
             igvm_enabled,
         })))
+    }
+
+    #[cfg(target_arch = "x86_64")]
+    fn construct_msr_buffer(hypervisor: &dyn hypervisor::Hypervisor) -> Result<Vec<MsrEntry>> {
+        let msr_indices = hypervisor
+            .get_msr_index_list()
+            .map_err(|e| Error::VcpuCreate(e.into()))?;
+        Ok(msr_indices
+            .into_iter()
+            .map(|index| MsrEntry {
+                index,
+                ..Default::default()
+            })
+            .collect())
     }
 
     #[cfg(target_arch = "x86_64")]
@@ -995,7 +1008,7 @@ impl CpuManager {
             #[cfg(target_arch = "x86_64")]
             self.hypervisor.get_cpu_vendor(),
             #[cfg(target_arch = "x86_64")]
-            self.msrs.clone(),
+            self.msr_buffer.clone(),
         )?;
 
         if let Some(snapshot) = snapshot {
