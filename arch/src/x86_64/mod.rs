@@ -19,6 +19,7 @@ pub mod tdx;
 
 mod mpspec;
 mod mptable;
+mod msr_filter;
 mod smbios;
 
 use std::arch::x86_64;
@@ -26,12 +27,13 @@ use std::collections::HashSet;
 use std::mem;
 
 use hypervisor::arch::x86::{CPUID_FLAG_VALID_INDEX, CpuIdEntry};
-use hypervisor::{CpuVendor, HypervisorCpuError, HypervisorError};
+use hypervisor::{CpuVendor, HypervisorCpuError, HypervisorError, HypervisorVmError};
 use linux_loader::loader::bootparam::{boot_params, setup_header};
 use linux_loader::loader::elf::start_info::{
     hvm_memmap_table_entry, hvm_modlist_entry, hvm_start_info,
 };
 use log::{debug, error, info};
+pub use msr_filter::{MAX_BITMAP_SIZE, filter_denied_msrs};
 use serde::{Deserialize, Serialize};
 use thiserror::Error;
 use vm_memory::{
@@ -158,6 +160,15 @@ pub enum Error {
         "The selected CPU profile cannot be utilized because the host's MSR-based features are not compatible with the profile"
     )]
     CpuProfileMsrIncompatibility,
+
+    #[error(
+        "Unable to apply MSR filter: Bitmaps exceed maximum permitted memory usage: {0} > {MAX_BITMAP_SIZE}"
+    )]
+    MsrFilterTooLarge(usize),
+
+    #[error("The hypervisor failed to set the given MSR filter")]
+    MsrFilter(#[source] HypervisorVmError),
+
     /// Error because TDX cannot be enabled when a custom (non host) CPU profile has been selected
     #[error("TDX cannot be enabled when a custom CPU profile has been selected")]
     CpuProfileTdxIncompatibility,

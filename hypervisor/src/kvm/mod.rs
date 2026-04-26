@@ -94,7 +94,9 @@ pub mod riscv64;
 use std::mem;
 
 #[cfg(target_arch = "x86_64")]
-use kvm_bindings::{KVM_MSR_FILTER_MAX_RANGES, KVM_X86_DEFAULT_VM};
+pub use kvm_bindings::KVM_MSR_FILTER_MAX_RANGES;
+#[cfg(target_arch = "x86_64")]
+use kvm_bindings::KVM_X86_DEFAULT_VM;
 ///
 /// Export generically-named wrappers of kvm-bindings for Unix-based platforms
 ///
