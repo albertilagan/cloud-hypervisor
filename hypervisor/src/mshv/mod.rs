@@ -1891,6 +1891,15 @@ impl MshvVm {
 /// ```
 impl vm::Vm for MshvVm {
     #[cfg(target_arch = "x86_64")]
+    fn msr_filter<'a>(
+        &self,
+        _filter: &[crate::MsrFilterRange<'a>],
+        _default_deny: bool,
+    ) -> vm::Result<()> {
+        todo!()
+    }
+
+    #[cfg(target_arch = "x86_64")]
     ///
     /// Sets the address of the one-page region in the VM's address space.
     ///

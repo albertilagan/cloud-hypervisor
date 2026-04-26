@@ -94,7 +94,7 @@ pub mod riscv64;
 use std::mem;
 
 #[cfg(target_arch = "x86_64")]
-use kvm_bindings::KVM_X86_DEFAULT_VM;
+use kvm_bindings::{KVM_MSR_FILTER_MAX_RANGES, KVM_X86_DEFAULT_VM};
 ///
 /// Export generically-named wrappers of kvm-bindings for Unix-based platforms
 ///
@@ -680,6 +680,73 @@ impl KvmVm {
 /// let vm = hypervisor.create_vm(HypervisorVmConfig::default()).expect("new VM fd creation failed");
 /// ```
 impl vm::Vm for KvmVm {
+    #[cfg(target_arch = "x86_64")]
+    fn msr_filter<'a>(
+        &self,
+        filter: &[crate::MsrFilterRange<'a>],
+        default_deny: bool,
+    ) -> vm::Result<()> {
+        // Found here https://github.com/torvalds/linux/blob/master/include/uapi/linux/kvm.h#L929C9-L929C31
+        const KVM_CAP_MSR_FILTER: u64 = 189;
+        // Can be computed from https://github.com/torvalds/linux/blob/master/include/uapi/linux/kvm.h#L1458
+        const KVM_X86_SET_MSR_FILTER: u64 = 0x4188aec6;
+
+        let cap_result = self.fd.check_extension_raw(KVM_CAP_MSR_FILTER);
+        if cap_result <= 0 {
+            return Err(vm::HypervisorVmError::MissingMsrFilterCapability {
+                error_code: cap_result,
+            });
+        }
+        // Workaround until https://github.com/rust-vmm/kvm/pull/359 is merged
+        #[repr(C)]
+        #[derive(Clone, Copy, Default)]
+        struct KvmMsrFilterRange {
+            flags: u32,
+            nmrs: u32,
+            base: u32,
+            bitmap: *const u8,
+        }
+
+        #[repr(C)]
+        struct KvmMsrFilter {
+            flags: u32,
+            ranges: [KvmMsrFilterRange; KVM_MSR_FILTER_MAX_RANGES as usize],
+        }
+
+        let mut kvm_filter = KvmMsrFilter {
+            flags: u32::from(default_deny),
+            ranges: [Default::default(); KVM_MSR_FILTER_MAX_RANGES as usize],
+        };
+
+        let num_ranges = filter.len();
+        if num_ranges > KVM_MSR_FILTER_MAX_RANGES as usize {
+            return Err(vm::HypervisorVmError::TooManyMsrFilterRanges {
+                num_ranges,
+                num_permitted_ranges: KVM_MSR_FILTER_MAX_RANGES as usize,
+            });
+        }
+
+        for (range, kvm_range) in filter.iter().zip(kvm_filter.ranges.iter_mut()) {
+            kvm_range.flags = range.flags;
+            kvm_range.nmrs = range.nmsrs;
+            kvm_range.base = range.base;
+            kvm_range.bitmap = range.bitmap.as_ptr();
+        }
+        // SAFETY: SYSCALL with valid parameters. All raw pointers are derived from references that are valid for the duration of this entire method call.
+        let result = unsafe {
+            libc::ioctl(
+                std::os::unix::io::AsRawFd::as_raw_fd(self.fd.as_ref()),
+                KVM_X86_SET_MSR_FILTER,
+                (&raw const kvm_filter).cast::<libc::c_void>(),
+            )
+        };
+        if result == 0 {
+            Ok(())
+        } else {
+            Err(vm::HypervisorVmError::MsrFilter { error_code: result })
+        }
+    }
+
     #[cfg(all(feature = "sev_snp", target_arch = "x86_64"))]
     fn sev_snp_init(&self, guest_policy: igvm_defs::SnpPolicy) -> vm::Result<()> {
         self.sev_fd
