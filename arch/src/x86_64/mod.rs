@@ -22,6 +22,7 @@ mod mptable;
 mod smbios;
 
 use std::arch::x86_64;
+use std::collections::HashSet;
 use std::mem;
 
 use hypervisor::arch::x86::{CPUID_FLAG_VALID_INDEX, CpuIdEntry};
@@ -38,7 +39,10 @@ use vm_memory::{
     GuestMemoryRegion,
 };
 
-use crate::x86_64::cpu_profile::CpuidOutputRegisterAdjustments;
+use crate::x86_64::cpu_profile::{
+    CpuidOutputRegisterAdjustments, FeatureMsrAdjustment, RequiredMsrUpdates,
+};
+use crate::x86_64::msr_definitions::RegisterAddress;
 use crate::{CpuProfile, GuestMemoryMmap, InitramfsConfig, RegionType};
 
 // While modern architectures support more than 255 CPUs via x2APIC,
@@ -138,11 +142,22 @@ pub enum Error {
     /// Error getting supported CPUID through the hypervisor (kvm/mshv) API
     #[error("Error getting supported CPUID through the hypervisor API")]
     CpuidGetSupported(#[source] HypervisorError),
+    /// Error getting the MSR-based features through the hypervisor (kvm) API
+    #[error("Error getting the MSR-based features through the hypervisor API")]
+    MsrBasedFeaturesGetSupported(#[source] HypervisorError),
+
+    #[error("Error getting the MSRs supported by the hypervisor")]
+    MsrIndexList(#[source] HypervisorError),
 
     #[error(
         "The selected CPU profile cannot be utilized because the host's CPUID entries are not compatible with the profile"
     )]
     CpuProfileCpuidIncompatibility,
+
+    #[error(
+        "The selected CPU profile cannot be utilized because the host's MSR-based features are not compatible with the profile"
+    )]
+    CpuProfileMsrIncompatibility,
     /// Error because TDX cannot be enabled when a custom (non host) CPU profile has been selected
     #[error("TDX cannot be enabled when a custom CPU profile has been selected")]
     CpuProfileTdxIncompatibility,
@@ -895,6 +910,75 @@ pub fn generate_common_cpuid(
     } else {
         Ok(host_cpuid)
     }
+}
+
+/// Compute the [`RequiredMsrUpdates`] for the active CPU profile.
+///
+/// In this fork, MSR profile data is currently empty for every variant, so the
+/// function returns `Ok(None)` whenever `cpu_profile.msr_data()` yields `None`
+/// (which is always the case until per-vendor profile data is shipped). When
+/// profile data is added in a follow-up, this function will need to call
+/// `hypervisor.get_msr_based_features` / `get_msr_index_list`, intersect with
+/// `data.permitted_msrs`, and return concrete `RequiredMsrUpdates`.
+pub fn compute_required_msr_updates(
+    hypervisor: &dyn hypervisor::Hypervisor,
+    cpu_profile: CpuProfile,
+    _kvm_hyperv: bool,
+) -> super::Result<Option<RequiredMsrUpdates>> {
+    let Some(data) = cpu_profile.msr_data() else {
+        return Ok(None);
+    };
+
+    let cpu_vendor_host = hypervisor.get_cpu_vendor();
+    let cpu_vendor_profile = data.cpu_vendor;
+    if cpu_vendor_host != cpu_vendor_profile {
+        return Err(Error::CpuProfileVendorIncompatibility {
+            cpu_vendor_profile,
+            cpu_vendor_host,
+        }
+        .into());
+    }
+
+    let msr_based_features = hypervisor
+        .get_msr_based_features()
+        .map_err(Error::MsrBasedFeaturesGetSupported)?;
+
+    let msr_index_list = hypervisor
+        .get_msr_index_list()
+        .map_err(Error::MsrIndexList)?;
+
+    let all_host_msrs: HashSet<u32> = msr_based_features
+        .iter()
+        .map(|entry| entry.index)
+        .chain(msr_index_list.iter().copied())
+        .collect();
+
+    let permitted_msrs: HashSet<u32> = data.permitted_msrs.iter().map(|msr| msr.0).collect();
+
+    let forbidden_msrs: Vec<RegisterAddress> = all_host_msrs
+        .difference(&permitted_msrs)
+        .map(|msr| RegisterAddress(*msr))
+        .collect();
+
+    if (all_host_msrs.len() - forbidden_msrs.len()) != permitted_msrs.len() {
+        error!("Host does not have all the permitted MSRS");
+        for msr in permitted_msrs.iter() {
+            if !all_host_msrs.contains(msr) {
+                error!("Host is missing the required MSR:={msr:#x}");
+            }
+        }
+        Err(Error::CpuProfileMsrIncompatibility)?;
+    }
+
+    // NOTE: It is fine to ignore the inner error because the called function logs any missing MSRs.
+    let adjusted_msr_based_features =
+        FeatureMsrAdjustment::adjust_to(&data.adjustments, &msr_based_features)
+            .map_err(|_| Error::CpuProfileMsrIncompatibility)?;
+
+    Ok(Some(RequiredMsrUpdates {
+        msr_based_features: adjusted_msr_based_features,
+        denied_msrs: forbidden_msrs,
+    }))
 }
 
 #[allow(clippy::too_many_arguments)]
