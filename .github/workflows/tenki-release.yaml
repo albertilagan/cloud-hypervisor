@@ -1,0 +1,47 @@
+name: Tenki Release
+
+on:
+  push:
+    branches:
+      - tenki/main
+      - tenki/cpu-profile
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    name: Build static binaries
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-unknown-linux-musl
+
+      - name: Install musl tools
+        run: sudo apt-get update && sudo apt-get install -y musl-tools
+
+      - name: Build static binaries
+        run: cargo build --release --target x86_64-unknown-linux-musl --bin cloud-hypervisor --bin ch-remote
+
+      - name: Stage artifacts
+        run: |
+          mkdir -p dist
+          cp target/x86_64-unknown-linux-musl/release/cloud-hypervisor dist/cloud-hypervisor-static
+          cp target/x86_64-unknown-linux-musl/release/ch-remote        dist/ch-remote-static
+          (cd dist && sha256sum cloud-hypervisor-static ch-remote-static > SHA256SUMS)
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tenki-cloud-hypervisor-${{ github.sha }}
+          path: dist/
+          retention-days: 90
