@@ -3,14 +3,18 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+use std::io::Write;
+
 use hypervisor::arch::x86::CpuIdEntry;
 use hypervisor::{CpuVendor, HypervisorType};
 use log::error;
+use serde::ser::SerializeStruct;
 use serde::{Deserialize, Serialize};
 use thiserror::Error;
 
+use crate::deserialize_u32_hex;
 use crate::x86_64::CpuidReg;
-use crate::x86_64::cpuid_definitions::{Parameters, deserialize_from_hex, serialize_as_hex};
+use crate::x86_64::cpuid_definitions::Parameters;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, Default)]
 #[serde(rename_all = "kebab-case")]
@@ -109,15 +113,37 @@ be taken care of in a follow up MR.
 */
 
 /// Used for adjusting an entire cpuid output register (EAX, EBX, ECX or EDX)
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize)]
 pub(super) struct CpuidOutputRegisterAdjustments {
-    #[serde(serialize_with = "serialize_as_hex")]
-    #[serde(deserialize_with = "deserialize_from_hex")]
+    #[serde(deserialize_with = "deserialize_u32_hex")]
     pub(in crate::x86_64) replacements: u32,
     /// Used to zero out the area `replacements` occupy. This mask is not necessarily !replacements, as replacements may pack values of different types (i.e. it is wrong to think of it as a bitset conceptually speaking).
-    #[serde(serialize_with = "serialize_as_hex")]
-    #[serde(deserialize_with = "deserialize_from_hex")]
+    #[serde(deserialize_with = "deserialize_u32_hex")]
     pub(in crate::x86_64) mask: u32,
+}
+
+/*
+We want to serialize the values as 10 bytes, starting with 0x,
+regardless of the value. This makes it easier for humans to compare different serialized values.
+*/
+impl Serialize for CpuidOutputRegisterAdjustments {
+    fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
+    where
+        S: serde::Serializer,
+    {
+        let mut s = serializer.serialize_struct("CpuidOutputRegisterAdjustments", 2)?;
+        let mut serialize_field = |key, value| {
+            // two bytes for "0x" prefix and eight for the hex encoded number
+            let mut buffer = [0_u8; 10];
+            write!(&mut buffer[..], "{value:#010x}").expect("This write should be infallible");
+            let str = core::str::from_utf8(&buffer[..])
+                .expect("the buffer should be filled with valid UTF-8 bytes");
+            s.serialize_field(key, str)
+        };
+        serialize_field("replacements", self.replacements)?;
+        serialize_field("mask", self.mask)?;
+        s.end()
+    }
 }
 impl CpuidOutputRegisterAdjustments {
     pub(in crate::x86_64) fn adjust(self, cpuid_output_register: &mut u32) {
