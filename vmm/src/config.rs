@@ -11,6 +11,7 @@ use std::result;
 use std::str::FromStr;
 use std::sync::LazyLock;
 
+use arch::CpuProfile;
 use block::ImageType;
 use clap::ArgMatches;
 use log::{debug, warn};
@@ -679,7 +680,8 @@ impl CpusConfig {
             .add("affinity")
             .add("features")
             .add("nested")
-            .add("core_scheduling");
+            .add("core_scheduling")
+            .add("profile");
         parser.parse(cpus).map_err(Error::ParseCpus)?;
 
         let boot_vcpus: u32 = parser
@@ -743,6 +745,11 @@ impl CpusConfig {
             .map_err(Error::ParseCpus)?
             .unwrap_or(CoreScheduling::Vm);
 
+        let profile = parser
+            .convert::<CpuProfile>("profile")
+            .map_err(Error::ParseCpus)?
+            .unwrap_or_default();
+
         Ok(CpusConfig {
             boot_vcpus,
             max_vcpus,
@@ -753,6 +760,7 @@ impl CpusConfig {
             features,
             nested,
             core_scheduling,
+            profile,
         })
     }
 }
