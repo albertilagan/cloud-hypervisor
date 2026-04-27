@@ -728,12 +728,7 @@ impl Block {
                 // - Advertise DISCARD only if sparse=true OR format supports marking
                 //   clusters as zero without deallocating
                 if disk_image.supports_sparse_operations() {
-                    // tenki: WRITE_ZEROES feature bit disabled to isolate the
-                    // v50→v51 ext4 inode bitmap corruption regression observed
-                    // on capsule template builds. Only the negotiated feature
-                    // bit is suppressed; downstream config code paths remain
-                    // unchanged so the guest kernel won't issue WRITE_ZEROES.
-                    // avail_features |= 1u64 << VIRTIO_BLK_F_WRITE_ZEROES;
+                    avail_features |= 1u64 << VIRTIO_BLK_F_WRITE_ZEROES;
                     if sparse || disk_image.supports_zero_flag() {
                         avail_features |= 1u64 << VIRTIO_BLK_F_DISCARD;
                     }
