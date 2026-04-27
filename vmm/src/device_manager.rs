@@ -2686,8 +2686,11 @@ impl DeviceManager {
                 );
 
                 if detected_image_type == ImageType::Raw {
-                    warn!("Autodetected raw image type. Disabling sector 0 writes.");
-                    disable_sector0_writes = true;
+                    // tenki: do NOT auto-disable sector 0 writes. The v51 guard
+                    // is a leading suspect for the sandbox snapshot ext4 inode
+                    // bitmap corruption regression observed on capsule builds.
+                    warn!("Autodetected raw image type. (tenki: sector 0 writes left enabled for diagnostic.)");
+                    // disable_sector0_writes = true;
                 } else {
                     warn!(
                         "Non-raw image type detected. In the future it will be necessary \
