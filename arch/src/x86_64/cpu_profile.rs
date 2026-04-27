@@ -26,6 +26,7 @@ pub enum CpuProfile {
     Host,
     Skylake,
     SapphireRapids,
+    TenkiAmdZen2,
 }
 
 impl CpuProfile {
@@ -43,6 +44,7 @@ impl CpuProfile {
             Self::Host => None,
             Self::Skylake => todo!(),
             Self::SapphireRapids => todo!(),
+            Self::TenkiAmdZen2 => Some(tenki_amd_zen2_data()),
         }?;
 
         if !amx {
@@ -89,6 +91,10 @@ impl CpuProfile {
             Self::Host => None,
             Self::Skylake => todo!(),
             Self::SapphireRapids => todo!(),
+            // No MSR profile data shipped yet; CPUID-only clamping is still
+            // useful in the meantime. compute_required_msr_updates returns
+            // Ok(None) when this is None.
+            Self::TenkiAmdZen2 => None,
         }
     }
 
@@ -395,3 +401,30 @@ pub struct MissingCpuidEntriesError;
 #[derive(Debug, Error)]
 #[error("Required MSR entries not found")]
 pub struct MissingMsrEntriesError;
+
+/// JSON describing the Tenki AMD Zen 2 baseline profile. Generated from the
+/// observed CPUID layout of `sandbox-stg-2844191` (AMD Ryzen 5 3600) with the
+/// 16 Zen 3-only flag bits cleared and the 3 Zen 2-only AMD-specific flags
+/// (`avic`, `sev`, `sev_es`) cleared so the saved CPUID is the intersection of
+/// our deployed AMD SKUs.
+///
+/// NOTE: This is a starter baseline. It pass-throughs every observed leaf and
+/// only clamps the bit deltas listed in
+/// `/Users/.../memory/project_sandbox_host_fleet.md`. It has *not* been
+/// validated against AMD APM volume 3 for reserved-bit handling, XSAVE
+/// component sizing, topology leaf consistency, or MSR adjustments. Treat as
+/// a working draft pending a focused review pass with AMD docs.
+const TENKI_AMD_ZEN2_CPUID_JSON: &str =
+    include_str!("cpu_profiles/tenki-amd-zen2.cpuid.json");
+
+#[cfg(feature = "kvm")]
+fn tenki_amd_zen2_data() -> CpuProfileData {
+    let adjustments: Vec<(Parameters, CpuidOutputRegisterAdjustments)> =
+        serde_json::from_str(TENKI_AMD_ZEN2_CPUID_JSON)
+            .expect("baked-in tenki-amd-zen2.cpuid.json must be valid");
+    CpuProfileData {
+        hypervisor: HypervisorType::Kvm,
+        cpu_vendor: CpuVendor::AMD,
+        adjustments,
+    }
+}

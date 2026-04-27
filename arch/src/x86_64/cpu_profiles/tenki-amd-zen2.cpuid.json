@@ -1,0 +1,3586 @@
+[
+  [
+    {
+      "leaf": "0x00000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xfffff9ff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xfffff967"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffef"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xfffffff7"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x0000000f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000010",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000010",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000010",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x00000010",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x20000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x20000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x20000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x20000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x40000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x4000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x4000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x4000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x4000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000001",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000002",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000003",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000004",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000005",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000006",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000007",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xff7dbfff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000008",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000009",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffdfff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000000f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000010",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000010",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000010",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000010",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000011",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000011",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000011",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000011",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000012",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000012",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000012",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000012",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000013",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000013",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000013",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000013",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000014",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000014",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000014",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000014",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000015",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000015",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000015",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000015",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000016",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000016",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000016",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000016",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000017",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000017",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000017",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000017",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000018",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000018",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000018",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000018",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000019",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000019",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000019",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000019",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001a",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001b",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001c",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001d",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001e",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffbff5"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x8000001f",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000020",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000020",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000020",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80000020",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80860000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80860000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80860000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0x80860000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0xc0000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EAX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0xc0000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EBX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0xc0000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "ECX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ],
+  [
+    {
+      "leaf": "0xc0000000",
+      "sub_leaf": {
+        "start": "0x0",
+        "end": "0xff"
+      },
+      "register": "EDX"
+    },
+    {
+      "replacements": "0x00000000",
+      "mask": "0xffffffff"
+    }
+  ]
+]
